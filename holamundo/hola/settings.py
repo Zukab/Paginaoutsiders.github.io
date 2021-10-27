@@ -79,12 +79,12 @@ WSGI_APPLICATION = 'hola.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'hola',
-        'USER': 'postgres',
-        'PASSWORD': '40448328Sebastian',
-        'HOST':'127.0.0.1',
-        'PORT':'5432'
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 

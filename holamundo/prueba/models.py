@@ -18,12 +18,15 @@ class Autor(models.Model):
     id = models.AutoField(primary_key=True)
     nombres = models.CharField('Nombre de autor', max_length=225, null=False, blank=False)
     apellidos = models.CharField('Apellido de autor', max_length=225, null=False, blank=False)
-    Correo = models.EmailField('Correo Electronico', blank=False,null=False)
+    correo = models.EmailField('Correo Electronico', blank=False,null=False)
+    def __str__(self) -> str:
+        return self.nombres+" "+self.apellidos
 
 
 class Meta(models.Model):
     verbose_name = 'Autor'
     verbose_name_plural = 'Autores'
 
-def __str__(self):
+    def __str__(self):
+    
         return "{0}.{1}".format(self.apellidos, self.nombres)

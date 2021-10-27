@@ -20,7 +20,7 @@ from prueba.views import homePageView, aboutPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', homePageView, name='home'),
-    path('about', aboutPageView, name='about'),
+    path('h/<int:id>', homePageView, ),
+    path('about/', aboutPageView, name='about'),
     
 ]

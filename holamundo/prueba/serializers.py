@@ -12,8 +12,3 @@ class AutorSerializer (serializers.ModelSerializer):
         model = Autor
         fields = ['id', 'nombres','apellidos','correo']
 
-class MetaSerializer (serializers.ModelSerializer):
-
-    class Meta:
-        model = Meta
-        fields = ['verbose_name','verbose_name_plural']
