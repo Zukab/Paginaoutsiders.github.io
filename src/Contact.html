@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/Outisiderss.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="../Js/lightbox.js"></script>
     <title>Document</title>
 </head>
 
@@ -44,15 +45,15 @@
                 <img src="/assets/imagenes/Gracias por ver.png" alt="">
             </div>
             </div>
-            <form action="">
+            <form>
 
                 <h2>Contacto</h2>
-                <input type="text" name="Nombre completo" placeholder="Nombre completo">
-                <input type="text" name="Correo" placeholder="Correo">
-                <input type="text" name="Telefono" placeholder="Telefono">
+                <input type="text" name="Nombre completo" id="Nombre completo" placeholder="Nombre completo">
+                <input type="text" name="Correo" id="Correo" placeholder="Correo">
+                <input type="text" name="Telefono" id="Telefono" placeholder="Telefono">
 
-                <TEXtarea name="Mensaje" placeholder="Escriba aqui su mensaje"></TEXtarea>
-                <input type="button" value="Enviar" id="boton">
+                <TEXtarea name="Mensaje" id="Mensaje" placeholder="Escriba aqui su mensaje"></TEXtarea>
+                <input type="button" value="Enviar" id="boton"  onclick="sendForm()">
             </form>
             <div class="burrito">
                 <img src="/assets/imagenes/Band_Mail.png" alt="">
