@@ -58,3 +58,19 @@ async function sendForm(){
     let result = await response.json();
     alert(result)
 }
+
+
+
+
+async function loaderSite(){
+    const response  = await fetch('http://127.0.0.1:8000/api/turistic/');
+    let result = await response.json();
+    console.log(result)
+    var siteHtml = '';
+    for(var a = 0; a< result.data.length; a++){
+        siteHtml = siteHtml + `<div class="site" > <h2>` + result.data[a].name + `</h2>  <img src="data:image/png;base64,` + result.data[a].image + `"  > <p> `+ result.data[a].description+` </p> <p> `+ result.data[a].ubication +` </p> </div>`;
+    }
+    content = document.getElementById('container-sites').innerHTML = siteHtml;
+
+
+}

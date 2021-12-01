@@ -477,3 +477,46 @@ max-width: 100%;
     margin: 50px auto;
     align-items: center;
 }
+
+
+
+
+
+
+
+
+/*  page site  */
+
+
+
+.container-sites{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    margin-bottom: 50px;
+
+}
+
+.site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  rgba(0, 0, 0, 0.384);
+    width: 30%;
+    height: 50%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.site img {
+    width: 60%;
+    border-radius: 10px;
+}
